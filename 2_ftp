@@ -1,0 +1,20 @@
+#####################
+# HUBBUB - ftp setup
+
+# STEPS #############
+# 1) format drive
+# 2) fstab drive
+# 3) setup anony-only ftpd
+# 4) setup ftp user
+
+# 1 #################
+sysctl hw.disknames #find drive name
+drive= #set drive name
+dmesg | grep $drive # confirm drive
+disklabel $drive
+newfs $drive
+
+# 2 #################
+drive=$drive"c"
+echo '\n' >> /etc/fstab
+echo '/dev/$drive
