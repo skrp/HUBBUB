@@ -1,24 +1,21 @@
-#########
-# HUBBUB
-Secure Encrypted Subnet
-
-Build to create
-A DHCP attachable subnet
-  Wireless
-  LAN
+###########################
+# HUBBUB - encrypted subnet
+A DHCP attachable (wirless/lan) subnet
 Behind a secure VPN
 
-# Services #####
+# VPN ###################
 [X] Web
-[X] FTP
 [ ] IRC
-[ ] SSH
 [X] RAWbin
-[ ] MAIL
 [ ] 8080
+[ ] MAIL
+[ ] VoIP
 
-Network File System
-Voice over Internet Protocol
-Media Player
-fuse eSATA XFR & Encryption
-VPN
+# HOST #################
+[X] FTP
+[ ] SSH
+[ ] SCP
+[ ] KXFR [usb eSata]
+[ ] MEDIA
+[ ] LAN
+[ ] WAP
