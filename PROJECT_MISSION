@@ -1,0 +1,44 @@
+HubBub Project
+
+OVERVIEW
+	HubBub offers a stable and secure network framework. A low budget  cost model is inherent by design. HubBub is a network gateway leased at a monthly rate of $20. 
+	HubBub's low cost model is reciprocated to the company. Hardware is only a Dell Optiplex 780 along with peripheral devices. All under $200 per base unit. 
+	HubBub was designed by a low level unix hacker. All features of this network node have been manicured by its master craftsman. 
+	All implementations are battle tested.
+	All guarantees are personal.
+
+HARDWARE & SOFTWARE LEASE
+	After signing the lease, a HubBub will be shipped along with instructions. Simply connect the computer via Ethernet to the Internet Service Provider Router with Dynamic Host Communication Protocol. If the host network does not have DHCP an agent will be ready to walk each client setting up the network over chat.
+
+STABILITY & SECURITY
+	Stability & security is the specialty of the OpenBSD operating system kernel. A pioneer in the field of network communication. The kernel has the capability of authorizing packet movement by filtering ports and network-users. 
+	Current production servers include Governments, Universities, and commercial giants like Adobe[0]. OpenBSD is the favored choice among hackers for network firewall routers. 
+
+REDUNDANT SERVICES
+	Services include Network File System, File Transfer Protocol, Web, Voice over Internet Protocol, Mail, Internet Relay Chat & Secure Shell. All source code is combed by our highest staff. 
+	HubBubs contain a plethora of protocols to allow for alternative  vehicles to certain venues in advent of a disaster. Ping, File Transfer, Message Passing are all as redundant as possible. 
+
+GATEWAY
+	Gateway - is as the Keystone of an Arch - to a network. The Network Address Translation allows for a separate subnet for Home & Businesses. 	Each HubBub carries a length of 25ft Wireless Access Point to allow for adjustable fields of coverage to WiFi. 
+	Each HubBub carries a 100ft Ethernet Hub that allows for secure direct connections. 
+	All traffic attached to this network will be connected to HubBub servers by Virtual Private Networks to allow for privacy. 
+
+ANTI-SURVIELLENT TECHNOLOGY	
+	Anti-Surveillent Technology is critical in global politics. Mr. Comely, the fired FBI director, set an Agency objective that encryption should be made illegal [1]. Our Internet Service Providers have been given monitoring power over our networks. 
+	OpenBSD is Non-American cryptographic software maintained by a highly-dedicated team of skilled coders to sanitize all applications. IBM admits “OpenBSD is quite possibly the most secure operating system on the planet” [2].
+	All traffic passed through a HubBub will be obfuscated. All packets will be encrypted communication that pour out of a variety of proxy connections that stem from the HubBub servers from which all packets pass.
+
+TRANSIENT KERNEL
+	OpenBSD has a GENERIC monolithic kernel. It's wide set of drivers allow for a Transient Kernel. Backup, Pull & Plug Solid State Drive to a new host machine, and Duplication are all simplified. Each kernel is transient and stable to allow for low server downtime. A fall back server is a recommended option.
+
+NETWORK SATELLITE
+	Network Satellites are laptops per-configured for encrypted access from public connections.  Files, logs, mail, messages, and voice; will all be available through this laptop in confidence. 
+	Extensive Field Testing has been passed too allow paranoid-free access to basic elements of a computer system.
+
+COMPANY STANDARD
+	HubBub has the endgame of changing the shape of networks globally. The objective is to build importance of Authorized Virtual Networks which are private networks consisted of all the same secure nodes
+
+REFERENCES
+[0] https://www.openbsd.org/users.html
+[1] http://www.cnn.com/2017/03/08/politics/james-comey-privacy-cybersecurity/
+[2] https://www.ibm.com/developerworks/aix/library/au-openbsd.html
