@@ -13,3 +13,18 @@ fetch https://openbsd.cs.toronto.edu/pub/OpenBSD/6.1/amd64/xserv$rel.tar.gz;
 fetch https://openbsd.cs.toronto.edu/pub/OpenBSD/6.1/amd64/xshare$rel.tar.gz;
 fetch https://openbsd.cs.toronto.edu/pub/OpenBSD/6.1/amd64/bsd.mp;
 fetch https://openbsd.cs.toronto.edu/pub/OpenBSD/6.1/amd64/bsd.rd;
+
+# SYSTEM ###########
+pkg_add sudo;
+pkg_add bash;
+pkg_add vim;
+pkg add screen;
+# PERL ##############
+cpan LWP::UserAgent;
+cpan WWW::Mechanize;
+cpan File::Find::Rule;
+cpan Digest::SHA;
+cpan Parallel::ForkManager;
+cpan File::LibMagic;
+cpan Proc::Daemon;
+cpan List::Utils;
