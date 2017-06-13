@@ -1,6 +1,6 @@
 #!/bin/sh
-#####################
-# HUBBUB - ftp setup
+######################
+# HUBBUB - ftpd config
 
 # STEPS #############
 # 1) format drive
@@ -50,6 +50,9 @@ chmod 444 /ftp/etc/motd;
 mkdir /ftp/pub;
 chown root /ftp/pub;
 chmod 555 /ftp/pub;
-mkdir /ftp/pub/mkrx;
+mkdir /ftp/pub/mkrx; # deposit only
 chown root /ftp/pub/mkrx;
 chmod 333 /ftp/pub/mkrx;
+mkdir /ftp/pub/all; # everyone
+chown ftp:ftp /ftp/pub/all;
+chmod 777 /ftp/pub/all;
