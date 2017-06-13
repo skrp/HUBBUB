@@ -9,15 +9,16 @@ A DHCP attachable subnet
 Behind a secure VPN
 
 # Services #####
-Web
-File Transfer Protocol
+[X] Web
+[X] FTP
+[ ] IRC
+[ ] SSH
+[X] RAWbin
+[ ] MAIL
+[ ] 8080
+
 Network File System
 Voice over Internet Protocol
-Mail
-Internet Relay Chat
-Secure Shell
 Media Player
 fuse eSATA XFR & Encryption
-RAWbin
 VPN
-proxy
