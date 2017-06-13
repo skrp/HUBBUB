@@ -15,7 +15,7 @@ Point-to-Point VPN
 [X] FTP
 [ ] SSH
 [ ] SCP
-[ ] KXFR [usb eSata]
+[ ] KXFR [usb eSata ftp]
 [ ] MEDIA
 [ ] LAN
 [ ] WAP
