@@ -1,1 +1,3 @@
 #!/bin/sh
+pkg_add install bash
+
