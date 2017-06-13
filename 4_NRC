@@ -1,0 +1,12 @@
+##########################
+# NRC - network relay chat
+# host server
+# network server
+# HOST ###################
+ip=127.0.0.1
+@admin
+clients via ip4
+# NETWORK ################
+/server $hive
+/join #pub
+/join #perl (forwarded)
