@@ -2,10 +2,14 @@ HubBub Project
 
 OVERVIEW
 	HubBub offers a stable and secure network framework. 
-	A low budget  cost model is inherent by design. HubBub is a network gateway leased at a monthly rate of $20. 
-	HubBub's low cost model is reciprocated to the company. Hardware is only a Dell Optiplex 780 along with peripheral devices. 
+	A low budget cost model is inherent by design. 
+	HubBub is a network gateway leased at a monthly rate. 
+	HubBub's low cost model is reciprocated to the company. 
+	
+	Hardware is only a Dell Optiplex 780 along with peripheral devices. 
 	All under $200 per base unit. 
 	HubBub was designed by a low level unix hacker. 
+	
 	All features of this network node have been manicured by its master craftsman. 
 	All implementations are battle tested.
 	All guarantees are personal.
@@ -57,7 +61,7 @@ NETWORK SATELLITE
 
 COMPANY STANDARD
 	HubBub has the endgame of changing the shape of networks globally. 
-	The objective is to build importance of Authorized Virtual Networks which are private networks consisted of all the same secure nodes
+	The objective is to build importance of Authorized Virtual Networks which are private networks consisted of secured nodes.
 
 REFERENCES
 [0] https://www.openbsd.org/users.html
