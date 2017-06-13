@@ -1,0 +1,33 @@
+########################
+#     RINGS OF POWER
+########################
+PUB  - hubbub 4th ring [ http ftp_dump 8080 raw ]
+SSH  - hubbub 3rd ring [ ping w face ssh doas2 compile ]
+LORD - hubbub 2nd ring [ ps top doas1 pkg ]
+ROOT - hubbub 1st ring [ doas0 ]
+
+# SSH
+rbash $pass & $key
+
+# LORD
+yubikey -> sh /root/$HOST
+doas host
+
+# ROOT
+yubikey ->sh /root/PRIME
+doas root $key
+send used
+recieve confirmation
+doas root
+
+# HOST VS ROOT ##########
+root is root
+host is not
+
+host explicit commands:
+  ps
+  kill
+  bin
+  shutdown
+  compile
+  
