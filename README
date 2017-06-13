@@ -1,7 +1,7 @@
 ###########################
 # HUBBUB - encrypted subnet
-A DHCP attachable (wirless/lan) subnet
-Point-to-Point VPN
+A DHCP attachable (wirless/lan) subnet 
+Node in a Point-to-Point VPN
 
 # VPN ###################
 [X] Web
