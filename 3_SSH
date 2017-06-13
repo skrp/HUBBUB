@@ -1,3 +1,14 @@
 #!/bin/sh
-pkg_add install bash
+########################
+#     RINGS OF POWER
+########################
+# PUB  - hubbub 4th ring [ http ftp_dump 8080 raw ssh ]
+# SSH  - hubbub 3rd ring [ ping w face rbash doas2 compile ]
+# LORD - hubbub 2nd ring [ ps top doas1 pkg ]
+# ROOT - hubbub 1st ring [ doas0 ]
 
+
+doas
+[]
+pkg_add install bash;
+usermod -s /bin/rbash alien;
