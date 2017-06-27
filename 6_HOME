@@ -1,0 +1,11 @@
+##################
+# HOME - user file
+
+norm restricted to explicit directories
+
+/home/norm/files/ftp
+/home/norm/files/usb1
+/home/norm/files/ubs2
+/home/norm/files/local
+/home/norm/files/xdrive
+/home/norm/files/pad
