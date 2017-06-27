@@ -17,8 +17,9 @@ Node in a Point-to-Point VPN
 [ ] SCP
 [ ] KXFR [usb eSata ftp]
 [ ] MEDIA
-[ ] LAN
-[ ] WAP(server)-DHCP
 [ ] TORRENT
-[ ] LAN-DHCP
+[ ] LAN(client)-DHCP
+[ ] LAN(server)-DHCP
 [ ] WIFI(client)-DHCP
+[ ] WAP(server)-DHCP
+[ ] XRANDR
