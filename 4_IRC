@@ -1,7 +1,10 @@
 ##########################
-# NRC - network relay chat
-# host server
-# network server
+# IRC - network relay chat
+# CHANNELS ###############
+mkrx
+hubub565
+# FORWARDS ###############
+hubbub tags in main channel forwared to private channels
 # HOST ###################
 ip=127.0.0.1
 @admin
