@@ -1,15 +1,9 @@
 ##########################
 # IRC - network relay chat
 # CHANNELS ###############
-mkrx
-hubub565
+network
+private (hubbub to hubbub)
+public
 # FORWARDS ###############
 hubbub tags in main channel forwared to private channels
-# HOST ###################
-ip=127.0.0.1
-@admin
-clients via ip4
-# NETWORK ################
-/server $hive
-/join #pub
-/join #perl (forwarded)
+public channels are forwarded to irc networks
