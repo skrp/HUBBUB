@@ -1,5 +1,6 @@
-###########################
-# HUBBUB - encrypted subnet
+###################################
+# HUBBUB - FreeBSD encrypted subnet
+
 A DHCP attachable (wirless/lan) subnet 
 Node in a Point-to-Point VPN
 
