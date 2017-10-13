@@ -3,7 +3,10 @@
 A DHCP attachable (wirless/lan) subnet 
 Node in a Point-to-Point VPN
 
-# VPN ###################
+CC - Command Center
+HB - HubBub Node
+
+# CC ######################
 [X] Web
 [ ] IRC
 [X] RAWbin
@@ -11,7 +14,8 @@ Node in a Point-to-Point VPN
 [ ] MAIL
 [ ] VoIP
 
-# HOST #################
+# HB #####################
+[ ] VPN PSK-OTP
 [X] FTP
 [ ] SSH
 [ ] SCP
@@ -22,4 +26,5 @@ Node in a Point-to-Point VPN
 [ ] LAN(server)-DHCP
 [ ] WIFI(client)-DHCP
 [ ] WAP(server)-DHCP
-[ ] XRANDR
+[ ] NFS
+[ ] NTP
