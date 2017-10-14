@@ -8,16 +8,16 @@ CC - Command Center
 HB - HubBub Node
 
 # CC ######################
-[X] Web
+[ ] Web
 [ ] IRC
-[X] RAWbin
+[ ] RAWbin
 [ ] 8080
 [ ] MAIL
 [ ] VoIP
 
 # HB #####################
 [ ] VPN PSK-OTP
-[X] FTP
+[ ] FTP
 [ ] SSH
 [ ] SCP
 [ ] KXFR [usb eSata ftp]
@@ -27,5 +27,6 @@ HB - HubBub Node
 [ ] LAN(server)-DHCP
 [ ] WIFI(client)-DHCP
 [ ] WAP(server)-DHCP
-[ ] NFS
+[X] NFS Server
+[X] NFS Client
 [ ] NTP
