@@ -1,8 +1,11 @@
 
 # ONETIMEONLY ##############
 zfs create zroot/nfs;
+zfs create zroot/ftp;
 zfs set sharenfs=on zroot/nfs;
 mkdir /zroot/nfs/pub;
 mkdir /zroot/nfs/dump;
 chmod 0777 /zroot/nfs/pub;
-chmod 0333 /zroot/nfs/dump
+chmod 0333 /zroot/nfs/dump;
+chmod 0777 /zroot/ftp/pub;
+chmod 0333 /zroot/ftp/dump;
