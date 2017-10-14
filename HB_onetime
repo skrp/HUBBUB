@@ -9,3 +9,4 @@ chmod 0777 /zroot/nfs/pub;
 chmod 0333 /zroot/nfs/dump;
 chmod 0777 /zroot/ftp/pub;
 chmod 0333 /zroot/ftp/dump;
+echo 'console none unknown off insecure' >> /etc/ttys;
