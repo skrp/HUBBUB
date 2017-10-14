@@ -1,5 +1,5 @@
 network={
   priority=1
-  ssid=”{{@}}″
-  psk=”{{@}}”
+  ssid=”″
+  psk=””
 }
