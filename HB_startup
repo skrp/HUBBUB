@@ -1,1 +1,2 @@
 mount -t nfs -o nfsv4 '':/'' /''
+zfs set sharenfs=on ''
