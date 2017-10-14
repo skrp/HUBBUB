@@ -1,2 +1,16 @@
 ########################
 # HB_pf - packet fileter
+
+# NET ##################
+int = ""
+gate = ""
+self = ""
+# OPTIONS ##############
+set skip on lo0
+set block-policy drop
+scrub on $int all reassemble tcp
+# FILTER ###############
+block log all
+pass on $int inet proto icmp from any to any icmp-type echoreq
+pass on $int inet proto { tcp, udp } from $self to any port nfs
+pass on $int inet proto { tcp, udp } from any to $self port nfs
