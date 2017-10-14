@@ -19,7 +19,9 @@ HB - HubBub Node
 [ ] HIVE
 [ ] NET_nfs
 [ ] NET_ftp
-[ ] VPN PSK-OTP
+[ ] NET_vpn PSK-OTP
+[ ] radio_io
+[ ] satelite_io
 
 # HB #####################
 [ ] VPN PSK-OTP
