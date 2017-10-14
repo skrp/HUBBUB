@@ -26,13 +26,9 @@ HB - HubBub Node
 [ ] FTP
 [ ] SSH
 [ ] SCP
-[ ] KXFR [usb eSata ftp]
-[ ] MEDIA
-[ ] TORRENT
+[X] NFS Server
+[X] NFS Client
 [ ] LAN(client)-DHCP
 [ ] LAN(server)-DHCP
 [ ] WIFI(client)-DHCP
 [ ] WAP(server)-DHCP
-[X] NFS Server
-[X] NFS Client
-[ ] NTP
