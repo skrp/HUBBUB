@@ -10,10 +10,16 @@ HB - HubBub Node
 # CC ######################
 [ ] Web
 [ ] IRC
-[ ] RAWbin
+[ ] RAW
 [ ] 8080
 [ ] MAIL
 [ ] VoIP
+[ ] NTP
+[ ] DNS
+[ ] HIVE
+[ ] NET_nfs
+[ ] NET_ftp
+[ ] VPN PSK-OTP
 
 # HB #####################
 [ ] VPN PSK-OTP
