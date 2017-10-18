@@ -21,15 +21,6 @@ encrypted network packet
 ssl mail delivery
 domain name verification 
 
-! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
-OPIE
-pf
-jail
-zfs-quota/mac
-dtrace
-nfs
-ssl
-
 #########################################
 encrypted network packet
 ssl mail delivery
@@ -166,3 +157,14 @@ User WWW folders
 
 Raw Text Post
 IRC client
+
+
+
+! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
+OPIE
+pf
+jail
+zfs-quota/mac
+dtrace
+nfs
+ssl
