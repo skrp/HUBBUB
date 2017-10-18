@@ -78,6 +78,7 @@ Users in groups:
   heir - rbash (OPIE)
   wheel - bash (OPIE)
   root - bash (OPIE)
+  
 ################################
 rotate jail nfs
 rotate jail ftp
