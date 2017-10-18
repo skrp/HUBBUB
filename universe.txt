@@ -2,17 +2,12 @@ Unix Universe
 skrp god
 
 # ToC ####################################
-encrypted network packet
-
-internet relay chat
-ssl mail delivery
 nfs zfs archives
 nfs zfs storage
-domain name verification 
 int.mkrx.net
 raw.pedrk.com
 www.pedrk.com
-
+internet relay chat
 network packet filter
 8080 Obfuscation 
 HIVE
@@ -22,6 +17,9 @@ scp logs-OPIE
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
+encrypted network packet
+ssl mail delivery
+domain name verification 
 
 ! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
 OPIE
@@ -29,6 +27,20 @@ pf
 jail
 zfs-quota/mac
 dtrace
+nfs
+ssl
+
+#########################################
+encrypted network packet
+ssl mail delivery
+domain name verification 
+
+SSL Trusted Platform
+Spiced with unqieness
+MITM SSL Prevention
+
+Entropy Brew
+To thicken vpn soup
 
 ########################################
 ssh-OPIE
@@ -132,3 +144,24 @@ All packet scrub
 Netwide sha-verified tables
 Automatic net blacklists
 
+################################
+internet relay chat
+
+Internal & Public
+Relay systems
+
+Internal chat & Public chat
+Internal Alarm Pings
+
+HIVE communication
+
+################################
+int.mkrx.net
+raw.pedrk.com
+www.pedrk.com
+
+HTTP Data Pass
+User WWW folders
+
+Raw Text Post
+IRC client
