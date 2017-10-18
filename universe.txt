@@ -96,7 +96,7 @@ rotate jail ftp
 rotate jail mail
 jail vps
 
-Temporary Cloned Kernels
+Temporary Cloned Systems
 ZFS Filesystem Quotas
 
 Always servers automatic
@@ -106,7 +106,7 @@ Data is archived
 The world vaporized
 
 New version of
-A cloned kernel
+A cloned system
 
 To service
 No matter of
