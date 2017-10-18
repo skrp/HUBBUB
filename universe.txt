@@ -1,34 +1,26 @@
 Unix Universe
-
 skrp god
 
+# ToC ####################################
+ssh-OPIE
+scp logs-OPIE 
 encrypted network packet
-
 network packet filter
-
 ftp 0333 dump
 ftp pub
-
 internet relay chat
 ssl mail delivery
-
 nfs zfs archives
 nfs zfs storage
-
 domain name verification
-
 8080 Obfuscation 
-
 int.mkrx.net
 raw.pedrk.com
 www.pedrk.com
-
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
-
 usb network listeners
-
 HIVE
 
 ########################################
@@ -59,3 +51,15 @@ Ever change'n phrases
 The later most important
 Ability to ping a shell server
 To verify all XIDs
+
+################################
+rotate jail nfs
+rotate jail ftp
+rotate jail mail
+
+Temporary Cloned Kernels
+ZFS Filesystem Quotas
+
+Allow server automatic
+Quarantene quarters
+
