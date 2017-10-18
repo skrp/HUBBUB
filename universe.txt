@@ -23,8 +23,6 @@ int.mkrx.net
 raw.pedrk.com
 www.pedrk.com
 
-scp logs-OPIE 
-
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
@@ -33,4 +31,31 @@ usb network listeners
 
 HIVE
 
+########################################
 ssh-OPIE
+scp logs-OPIE 
+
+The greatest strength
+Of unix is network
+
+unix is access
+Equal remote or local
+
+Network protocols
+Are all born from unix
+
+Thus have a 
+Secure shell
+Is imperative
+To a powerful
+unix network
+
+OPIE eliminates
+Snoop replay attacks
+
+Ever change'n phrases
+& Transaction ID
+
+The later most important
+Ability to ping a shell server
+To verify all XIDs
