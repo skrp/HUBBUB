@@ -3,8 +3,7 @@ skrp god
 
 # ToC ####################################
 encrypted network packet
-ftp 0333 dump
-ftp pub
+
 internet relay chat
 ssl mail delivery
 nfs zfs archives
@@ -24,13 +23,11 @@ rotate jail nfs
 rotate jail ftp
 rotate jail mail
 
-
 ! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
 OPIE
 pf
 jail
-zfs-quota
-zfs-mac
+zfs-quota/mac
 dtrace
 
 ########################################
@@ -62,6 +59,13 @@ The later most important
 Ability to ping a shell server
 To verify all XIDs
 
+Users in groups:
+  nologin - never shell
+  norm - rbash
+  priv - bash
+  heir - rbash (OPIE)
+  wheel - bash (OPIE)
+  root - bash (OPIE)
 ################################
 rotate jail nfs
 rotate jail ftp
@@ -82,6 +86,9 @@ A cloned kernel
 To service
 No matter of
 Past catastrophes
+
+nfs & ftp duo folder
+pub & 333
 
 #################################
 usb network listeners
@@ -104,6 +111,10 @@ Calculate entropy
 
 Encript Shred Pack 
 Files
+
+Network Neighborhood Watch
+Internal dtrace monitors
+External Random Host-Log Scrub
 
 ################################
 network packet filter
