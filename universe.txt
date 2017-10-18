@@ -30,8 +30,11 @@ SSL Trusted Platform
 Spiced with unqieness
 MITM SSL Prevention
 
-Entropy Brew
+Netwide Entropy Brew
 To thicken vpn soup
+
+3rd-Party-node 
+DNS Verification
 
 ########################################
 ssh-OPIE
