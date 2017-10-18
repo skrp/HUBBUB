@@ -8,10 +8,10 @@ PasswordAuthentication no
  
 
 # RINGS OF POWER ####################
-# nil = no shell [ httpd ftpd 8080 ]
+# slave = no shell [ httpd ftpd 8080 ]
 
-# norm = rssh [ /home/ /nfs/ /ftp/ /mkrx ]
-# perv = ssh (partial admin, no escalation)
+# peon = rssh [ /home/ /nfs/ /ftp/ /mkrx ]
+# lord = ssh (partial admin, no escalation)
 
 # heir = rssh OPIE (su wheel user)
 # wheel = ssh OPIE group-heir partial-sudo (su root) 
