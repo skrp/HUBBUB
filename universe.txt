@@ -1,0 +1,22 @@
+Unix Universe
+
+skrp god
+
+encrypted network
+
+network packet filter
+
+ftp 0333 dump
+ftp pub
+
+8080 Obfuscation
+
+int.mkrx.net
+raw.pedrk.com
+www.pedrk.com
+
+scp logs-OPIE 
+
+rotate jail nfs
+rotate jail ftp
+rotate jail mail
