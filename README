@@ -8,29 +8,29 @@ CC - Command Center
 HB - HubBub Node
 
 # CC ######################
-[ ] Web
-[ ] IRC
-[ ] RAW
+[X] Web
+[X] IRC
+[X] RAW
 [ ] 8080
 [ ] MAIL
 [ ] VoIP
 [ ] NTP
 [ ] DNS
-[ ] HIVE
-[ ] NET_nfs
-[ ] NET_ftp
+[X] HIVE
+[X] NET_nfs
+[X] NET_ftp
 [ ] NET_vpn PSK-OTP
 [ ] radio_io
 [ ] satelite_io
 
 # HB #####################
 [ ] VPN PSK-OTP
-[ ] FTP
+[X] FTP
 [X] SSH-OPIE
-[ ] SCP
+[X] SCP
 [X] NFS Server
 [X] NFS Client
-[ ] LAN(client)-DHCP
-[ ] LAN(server)-DHCP
-[ ] WIFI(client)-DHCP
-[ ] WAP(server)-DHCP
+[X] LAN(client)-DHCP
+[X] LAN(server)-DHCP
+[X] WIFI(client)-DHCP
+[X] WAP(server)-DHCP
