@@ -2,6 +2,7 @@ Unix Universe
 skrp god
 
 # ToC ####################################
+KERN.CONF
 nfs zfs archives
 nfs zfs storage
 int.mkrx.net
@@ -20,6 +21,17 @@ rotate jail mail
 encrypted network packet
 ssl mail delivery
 domain name verification 
+
+#########################################
+KERN.CONF
+
+Purified CONF
+
+Node kernel clones
+Server kernel
+
+Sha Verified Compile 
+zfs opie-only confs
 
 #########################################
 encrypted network packet
