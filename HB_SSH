@@ -1,26 +1,26 @@
-#!/bin/sh
+Protocol 2
+PermitRootLogin no
+AllowUsers
+StrictModes yes
+MaxAuthTries 4
+UsePam
+PasswordAuthentication no
+ 
+
+# RINGS OF POWER ####################
+# nil = no shell [ httpd ftpd 8080 ]
+
+# norm = rssh [ /home/ /nfs/ /ftp/ /mkrx ]
+# perv = ssh (partial admin, no escalation)
+
+# heir = rssh OPIE (su wheel user)
+# wheel = ssh OPIE group-heir partial-sudo (su root) 
+# root = ALERT all-power
+
 ########################
 #     RINGS OF POWER
 ########################
-# PUB  - hubbub 4th ring [ http ftp_dump 8080 raw ]
+# PUB  - hubbub 4th ring [ httpd ftpd 8080 n0rm ]
 # SSH  - hubbub 3rd ring [ ping w face ssh doas2 compile ]
 # LORD - hubbub 2nd ring [ ps top doas1 pkg ]
 # ROOT - hubbub 1st ring [ doas0 ]
-
-# SSH
-# rbash $pass & $key
-
-# LORD
-# yubikey -> sh /root/$HOST
-# doas root host
-
-# ROOT
-# yubikey ->sh /root/PRIME
-# doas root $key
-# send used
-# recieve confirmation
-# doas root
-
-[]
-pkg_add install bash;
-usermod -s /bin/rbash alien;
