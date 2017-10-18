@@ -9,7 +9,15 @@ network packet filter
 ftp 0333 dump
 ftp pub
 
-8080 Obfuscation
+internet relay chat
+ssl mail delivery
+
+nfs zfs archives
+nfs zfs storage
+
+domain name verification
+
+8080 Obfuscation 
 
 int.mkrx.net
 raw.pedrk.com
@@ -20,3 +28,9 @@ scp logs-OPIE
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
+
+usb network listeners
+
+HIVE
+
+ssh-OPIE
