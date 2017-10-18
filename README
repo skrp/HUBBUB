@@ -34,3 +34,13 @@ HB - HubBub Node
 [X] LAN(server)-DHCP
 [X] WIFI(client)-DHCP
 [X] WAP(server)-DHCP
+
+
+################################
+FBSD-MKRX.CONF
+pf-scp_tables
+ssh-OPIE
+jail_30Dturnover-nfs-zfs_quota
+jail_30Dturnover-ftp-zfs_quota
+jail_30Dturnover-mail
+HIVE
