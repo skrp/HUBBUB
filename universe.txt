@@ -2,8 +2,6 @@ Unix Universe
 skrp god
 
 # ToC ####################################
-ssh-OPIE
-scp logs-OPIE 
 encrypted network packet
 network packet filter
 ftp 0333 dump
@@ -17,11 +15,15 @@ domain name verification
 int.mkrx.net
 raw.pedrk.com
 www.pedrk.com
+
+
+HIVE
+usb network listeners
+ssh-OPIE
+scp logs-OPIE 
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
-usb network listeners
-HIVE
 
 ########################################
 ssh-OPIE
@@ -69,6 +71,30 @@ The world vaporized
 New version of
 A cloned kernel
 
-To service 
+To service
 No matter of
 Past catastrophes
+
+#################################
+usb network listeners
+
+Network USB Listeners
+Devices for deposited
+Anywhere in the net
+
+Send > Pull = Transient Data
+Encrypted send & store
+
+################################
+HIVE
+
+Network Process Framework
+20% Max cpu tax
+
+Scrape the internet
+Calculate entropy
+
+Encript Shred Pack 
+Files
+
+
