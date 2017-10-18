@@ -44,3 +44,4 @@ jail_30Dturnover-nfs-zfs_quota
 jail_30Dturnover-ftp-zfs_quota
 jail_30Dturnover-mail
 HIVE
+log_scp
