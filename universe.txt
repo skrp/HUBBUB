@@ -3,20 +3,19 @@ skrp god
 
 # ToC ####################################
 encrypted network packet
-network packet filter
 ftp 0333 dump
 ftp pub
 internet relay chat
 ssl mail delivery
 nfs zfs archives
 nfs zfs storage
-domain name verification
-8080 Obfuscation 
+domain name verification 
 int.mkrx.net
 raw.pedrk.com
 www.pedrk.com
 
-
+network packet filter
+8080 Obfuscation 
 HIVE
 usb network listeners
 ssh-OPIE
@@ -24,6 +23,15 @@ scp logs-OPIE
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
+
+
+! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
+OPIE
+pf
+jail
+zfs-quota
+zfs-mac
+dtrace
 
 ########################################
 ssh-OPIE
@@ -97,4 +105,19 @@ Calculate entropy
 Encript Shred Pack 
 Files
 
+################################
+network packet filter
+8080 Obfuscation 
+
+Explicit Firewall Drop
+
+Proxy packet income
+Proxy packet outcome
+Proxy packet delay
+
+All TCP reassemble
+All packet scrub
+
+Netwide sha-verified tables
+Automatic net blacklists
 
