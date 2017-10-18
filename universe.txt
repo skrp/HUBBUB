@@ -79,8 +79,13 @@ To verify all XIDs
 
 Users in groups:
   nologin - never shell
-  norm - rbash
+  scponly - nologin
+  
+  scrub - rbash jail
+  norm - bash jail
+  
   priv - bash
+
   heir - rbash (OPIE)
   wheel - bash (OPIE)
   root - bash (OPIE)
@@ -89,6 +94,7 @@ Users in groups:
 rotate jail nfs
 rotate jail ftp
 rotate jail mail
+jail vps
 
 Temporary Cloned Kernels
 ZFS Filesystem Quotas
@@ -176,7 +182,8 @@ IRC client
 
 
 ! MAJOR SUBJECT !!!!!!!!!!!!!!!!!!!!!!!!
-OPIE
+OPIE /etc/pam.conf
+sysctl
 pf
 jail
 zfs-quota/mac
