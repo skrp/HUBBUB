@@ -34,26 +34,29 @@ anchor "ftp-proxy/*"
 block log all
 # VPN
 pass out on $int inet proto udp from $self to $int_broker port vpn
-# DNS 
-pass on $int inet proto tcp from $self to $int_broker port ntp
-pass on $int inet proto tcp from $int_broker to $self port ntp
+# NFS
+pass on $int inet proto { tcp, udp } from $self to <node> port nfs
+pass on $int inet proto { tcp, udp } from <node> to $self port nfs
 # SSH
 pass on $int inet proto tcp from <node> to $self port ssh
 pass on $int inet proto tcp from $self to <node> port ssh
 pass on $int inet proto tcp from <node> to $int_broker port $scplog_port
-# FTP
-pass on $int inet proto tcp from <net> to $self port $ftp_prox_port
-pass on $int inet proto tcp from $self to <net> port ftp
-# PING
-pass on $int inet proto icmp from <node> to <node> icmp-type echoreq
-# NFS
-pass on $int inet proto { tcp, udp } from $self to <node> port nfs
-pass on $int inet proto { tcp, udp } from <node> to $self port nfs
-# HTTP
-pass out on $int inet proto udp from $self to $int_broker port $inthttp_port
-# IRC
-pass on $int inet proto tcp from $self to $int_broker port irc
-pass on $int inet proto tcp from $int_broker to $self port irc
 # MAIL
 pass on $int inet proto tcp from $self to $int_broker port mail
 pass on $int inet proto tcp from $int_broker to $self port mail
+# FTP
+pass on $int inet proto tcp from <net> to $self port $ftp_prox_port
+pass on $int inet proto tcp from $self to <net> port ftp
+# HTTP
+pass out on $int inet proto udp from $self to $int_broker port $inthttp_port
+# DNS 
+pass on $int inet proto tcp from $self to $int_broker port ntp
+pass on $int inet proto tcp from $int_broker to $self port ntp
+# NTP
+pass on $int inet proto tcp from $int_broker to $self port ntp
+# IRC
+pass on $int inet proto tcp from $self to $int_broker port irc
+pass on $int inet proto tcp from $int_broker to $self port irc
+# PING
+pass on $int inet proto icmp from <node> to <node> icmp-type echoreq
+
