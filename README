@@ -4,10 +4,9 @@
 A DHCP attachable (wirless/lan) subnet 
 Node in a Point-to-Point VPN
 
-CC - Command Center
-HB - HubBub Node
-
-HUBBUB Network Kernels
+HUBBUB Network Kernels:
+CC - HUBBUB Command Center
+HB - HUBBUB Node
 
 # CC ######################
 [X] Web
