@@ -2,9 +2,10 @@
 # HB_pf - packet fileter
 # NET ##################
 int = ""
-gate = ""
-int_broker = ""
 self = ""
+
+# servers
+int_broker = ""
 ftpproxy="127.0.0.1"
 ftp_prox_port="8021"
 scplog_port="8666"
