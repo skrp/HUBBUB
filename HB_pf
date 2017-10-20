@@ -1,8 +1,9 @@
 ########################
 # HB_pf - packet fileter
 # NET ##################
-int = ""
+int = "vpn0"
 self = ""
+raw = ""
 
 # servers
 int_broker = ""
@@ -24,6 +25,7 @@ set block-policy drop
 scrub on $int all reassemble tcp
 
 # ROUTE
+nat on $int inet udp from $self to $int_broker -> ($int)
 rdr pass proto tcp from any to $ext_broker port ftp -> $ftpproxy port $ftp_prox_port
 
 # ANCHOR
@@ -35,7 +37,7 @@ anchor "ftp-proxy/*"
 # FILTER ###########################################################
 block log all
 # VPN
-pass out on $int inet proto udp from $self to $int_broker port vpn
+pass on $int inet proto udp from $self to $int_broker port vpn
 # NFS
 pass on $int inet proto { tcp, udp } from $self to <node> port nfs
 pass on $int inet proto { tcp, udp } from <node> to $self port nfs
