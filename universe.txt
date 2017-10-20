@@ -1,6 +1,12 @@
 Unix Universe
 skrp god
 
+unix kernel developed 
+by network relations
+
+Log sharing & self-contained kernel security
+Offers immunity to node corruption
+
 # ToC ####################################
 KERN.CONF
 nfs zfs archives
