@@ -8,6 +8,14 @@ self = ""
 ftpproxy="127.0.0.1"
 ftp_prox_port="8021"
 scplog_port="8666"
+inthttp_port="7666"
+
+# nfs readonly tables 0555 
+table <node> persist file "/net/pf_node" # ntp nfs dns scp mail HIVE ftp irc vpn
+table <blacklist> persist file "/net/pf_blacklist"
+table <http> persist file "/net/pf_http"
+table <proxy> persist file "/net/pf_proxy"
+table <jail> persist file "/net/pf_jail"
 
 # OPTIONS 
 set skip on lo0
@@ -28,14 +36,21 @@ block log all
 pass out on $int inet proto udp from $self to $int_broker port vpn
 # DNS 
 pass on $int inet proto tcp from $self to $int_broker port ntp
+pass on $int inet proto tcp from $int_broker to $self port ntp
 # SSH
 pass on $int inet proto tcp from <node> to $self port ssh
 pass on $int inet proto tcp from $self to <node> port ssh
 pass on $int inet proto tcp from <node> to $int_broker port $scplog_port
 # FTP
-pass on $int inet proto tcp from $ext_broker to $ftp_server port $ftp_prox_port
+pass on $int inet proto tcp from <net> to $self port $ftp_prox_port
+pass on $int inet proto tcp from $self to <net> port ftp
 # PING
 pass on $int inet proto icmp from <node> to <node> icmp-type echoreq
 # NFS
 pass on $int inet proto { tcp, udp } from $self to <node> port nfs
 pass on $int inet proto { tcp, udp } from <node> to $self port nfs
+# HTTP
+pass out on $int inet proto udp from $self to $int_broker port $inthttp_port
+# IRC
+pass on $int inet proto tcp from $self to $int_broker port irc
+pass on $int inet proto tcp from $int_broker to $self port irc
