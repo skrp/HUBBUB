@@ -4,6 +4,7 @@
 # NET ##################
 int = ""
 gate = ""
+int_broker = ""
 self = ""
 # OPTIONS ##############
 set skip on lo0
@@ -11,6 +12,16 @@ set block-policy drop
 scrub on $int all reassemble tcp
 # FILTER ###############
 block log all
-pass on $int inet proto icmp from any to any icmp-type echoreq
-pass on $int inet proto { tcp, udp } from $self to any port nfs
-pass on $int inet proto { tcp, udp } from any to $self port nfs
+# VPN
+pass out on $int inet proto udp from $self to $int_broker port vpn
+# DNS 
+pass on $int inet proto tcp from $self to $int_broker port ntp
+# SSH
+pass on $int inet proto tcp from <node> to $self port ssh
+pass on $int inet proto tcp from $self to <node> port ssh
+
+# PING
+pass on $int inet proto icmp from <node> to <node> icmp-type echoreq
+# NFS
+pass on $int inet proto { tcp, udp } from $self to <node> port nfs
+pass on $int inet proto { tcp, udp } from <node> to $self port nfs
