@@ -1,13 +1,7 @@
-Unix Universe
-skrp god
-
 unix kernel developed 
 by network relations
 
-Log sharing & self-contained kernel security
-Offers immunity to node corruption
-
-# ToC ####################################
+# Table of Contents ####################################
 KERN.CONF
 nfs zfs archives
 nfs zfs storage
@@ -27,6 +21,8 @@ rotate jail mail
 encrypted network packet
 ssl mail delivery
 domain name verification 
+
+
 
 #########################################
 KERN.CONF
