@@ -54,3 +54,6 @@ pass out on $int inet proto udp from $self to $int_broker port $inthttp_port
 # IRC
 pass on $int inet proto tcp from $self to $int_broker port irc
 pass on $int inet proto tcp from $int_broker to $self port irc
+# MAIL
+pass on $int inet proto tcp from $self to $int_broker port mail
+pass on $int inet proto tcp from $int_broker to $self port mail
