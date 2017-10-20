@@ -30,6 +30,7 @@ rdr pass proto tcp from any to $ext_broker port ftp -> $ftpproxy port $ftp_prox_
 nat-anchor "ftp-proxy/*"
 rdr-anchor "ftp-proxy/*"
 anchor "ftp-proxy/*"
+# rdr pass proto tcp from any to $ext_broker port ftp -> $ftpproxy port $ftp_prox_port
 
 # FILTER ###########################################################
 block log all
