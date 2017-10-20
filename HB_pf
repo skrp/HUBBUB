@@ -31,7 +31,7 @@ nat-anchor "ftp-proxy/*"
 rdr-anchor "ftp-proxy/*"
 anchor "ftp-proxy/*"
 
-# FILTER ###############
+# FILTER ###########################################################
 block log all
 # VPN
 pass out on $int inet proto udp from $self to $int_broker port vpn
