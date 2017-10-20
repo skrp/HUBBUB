@@ -2,6 +2,11 @@
 # ONETIMEONLY ##############
 zfs create zroot/nfs;
 zfs create zroot/ftp;
+mkdir /HIVE
+mkdir /net
+mkdir /pool
+mkdir /g
+
 zfs set sharenfs=on zroot/nfs;
 mkdir /zroot/nfs/pub;
 mkdir /zroot/nfs/dump;
@@ -12,3 +17,20 @@ chmod 0333 /zroot/ftp/dump;
 echo 'console none unknown off insecure' >> /etc/ttys;
 echo 'crypt_default=blf' >> /etc/auth.conf;
 sed 'passwd_format="blf"'
+
+
+
+pkg install sudo;
+pkg install perl 
+pkg install bash;
+pkg install vim;
+pkg install screen;
+
+cpan install LWP::UserAgent;
+cpan install WWW::Mechanize;
+cpan install File::Find::Rule;
+cpan install Digest::SHA;
+cpan install Parallel::ForkManager;
+cpan install File::LibMagic;
+cpan install Proc::Daemon;
+cpan install List::Utils;
