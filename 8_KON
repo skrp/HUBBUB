@@ -1,6 +1,0 @@
-#######################
-# KON - config decrypt
-decrypt to memory
-sha memory contents
-check(sha, mem_sha)
-exec server
