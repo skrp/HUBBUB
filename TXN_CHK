@@ -4,6 +4,6 @@ use strict; use warnings;
 # TXN_CHK - OPIE TXN ID PING
 
 # color TXN changes
-# keep timeline
+# keep timeline of OPIE logins
 
 use Term::ANSIColor;
