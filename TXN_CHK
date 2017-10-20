@@ -1,9 +1,0 @@
-#!/usr/local/bin/perl
-use strict; use warnings;
-############################
-# TXN_CHK - OPIE TXN ID PING
-
-# color TXN changes
-# keep timeline of OPIE logins
-
-use Term::ANSIColor;
