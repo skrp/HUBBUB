@@ -11,6 +11,7 @@ ftpproxy="127.0.0.1"
 ftp_prox_port="8021"
 scplog_port="8666"
 inthttp_port="7666"
+httpout_jail=""
 
 # nfs readonly tables 0555 
 table <node> persist file "/net/pf_node" # ntp nfs dns scp mail HIVE ftp irc vpn
@@ -52,7 +53,8 @@ pass on $int inet proto tcp from $int_broker to $self port mail
 pass on $int inet proto tcp from <net> to $self port $ftp_prox_port
 pass on $int inet proto tcp from $self to <net> port ftp
 # HTTP
-pass out on $int inet proto udp from $self to $int_broker port $inthttp_port
+pass out on $int inet proto tcp from $self to $int_broker port $inthttp_port
+pass out on $int inet proto tcp from $httpout_jail to $int_broker port { http, https } 
 # DNS 
 pass on $int inet proto tcp from $self to $int_broker port ntp
 pass on $int inet proto tcp from $int_broker to $self port ntp
