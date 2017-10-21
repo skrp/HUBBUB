@@ -21,7 +21,7 @@ sed 'passwd_format="blf"'
 
 
 pkg install sudo;
-pkg install perl;
+pkg install perl5;
 pkg install vsftpd;
 pkg install openntpd;
 pkg install bash;
@@ -30,10 +30,8 @@ pkg install screen;
 pkg install cmatrix;
 
 cpan install LWP::UserAgent;
-cpan install WWW::Mechanize;
 cpan install File::Find::Rule;
 cpan install Digest::SHA;
 cpan install Parallel::ForkManager;
 cpan install File::LibMagic;
-cpan install Proc::Daemon;
 cpan install List::Utils;
