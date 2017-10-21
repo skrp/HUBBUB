@@ -21,10 +21,13 @@ sed 'passwd_format="blf"'
 
 
 pkg install sudo;
-pkg install perl 
+pkg install perl;
+pkg install vsftpd;
+pkg install openntpd;
 pkg install bash;
 pkg install vim;
 pkg install screen;
+pkg install cmatrix;
 
 cpan install LWP::UserAgent;
 cpan install WWW::Mechanize;
