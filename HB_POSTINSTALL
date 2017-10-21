@@ -28,6 +28,7 @@ pkg install bash;
 pkg install vim;
 pkg install screen;
 pkg install cmatrix;
+pkg install openvpn;
 
 cpan install LWP::UserAgent;
 cpan install File::Find::Rule;
