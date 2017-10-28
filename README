@@ -17,6 +17,7 @@ PSK OPIE AUTHENTICATION
 GROUP PUZZEL ESCALATION
 NET TABLE NAMESERVICE [net ban jail blacklist]
 FULL CAPABILITY NODES [if drives nfs server]
+NET GROUP CLASS
 MASTERKEY ACCESS
 
 # SERVICES ####################
@@ -27,6 +28,7 @@ MASTERKEY ACCESS
 [ ] WCHAT
 [ ] radio_io
 [ ] satelite_io
+[ ] GROUP
 [X] Web
 [X] IRC
 [X] RAW
