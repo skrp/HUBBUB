@@ -24,8 +24,7 @@ MASTERKEY ACCESS
 [ ] MAIL
 [ ] DNS
 [ ] RX (voice-recording exchange)
-[ ] HTTP
-[ ] IRC
+[ ] WCHAT
 [ ] radio_io
 [ ] satelite_io
 [X] Web
