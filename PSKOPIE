@@ -1,0 +1,10 @@
+# PSKOPIE #####################################
+# Pre Shared Key Onetime Password In Everything
+
+# PSK #########################################
+keygen
+/keys
+# OPIE ########################################
+su $user
+opieaccess -f
+
