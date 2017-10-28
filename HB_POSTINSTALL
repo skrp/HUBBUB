@@ -28,7 +28,13 @@ pkg install bash;
 pkg install vim;
 pkg install screen;
 pkg install cmatrix;
-pkg install openvpn;
+pkg install opensmtpd;
+pkg install opensmtpd-extras-filter-perl;
+pkg install opensmtpd-extras-tool-stats;
+pkg install nmap;
+pkg install squid;
+pkg install squidanalyzer;
+pkg install squidguard;
 
 cpan install LWP::UserAgent;
 cpan install File::Find::Rule;
