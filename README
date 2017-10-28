@@ -2,7 +2,7 @@
 # HUBBUB - FreeBSD encrypted subnet
 
 A DHCP attachable (wirless/lan) subnet 
-Node in a Point-to-Point VPN
+Point-to-Point Encrypted Tunnels
 
 HUBBUB Network Kernels:
 CC - HUBBUB Command Center
@@ -25,9 +25,8 @@ HB - HUBBUB Node
 [ ] satelite_io
 
 # HB #####################
-[ ] VPN PSK-OTP
 [X] FTP
-[X] SSH-OPIE
+[X] SSH-PSK-OPIE
 [X] SCP
 [X] NFS Server
 [X] NFS Client
