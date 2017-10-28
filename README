@@ -19,15 +19,17 @@ NET TABLE NAMESERVICE [net ban jail blacklist]
 FULL CAPABILITY NODES [if drives nfs server]
 
 # SERVICES ####################
-[X] Web
-[X] IRC
-[X] RAW
 [ ] 8080
 [ ] MAIL
 [ ] DNS
 [ ] RX (voice-recording exchange)
 [ ] HTTP
 [ ] IRC
+[ ] radio_io
+[ ] satelite_io
+[X] Web
+[X] IRC
+[X] RAW
 [X] RAW
 [X] NTP
 [X] HIVE
@@ -42,16 +44,3 @@ FULL CAPABILITY NODES [if drives nfs server]
 [X] LAN(server)-DHCP
 [X] WIFI(client)-DHCP
 [X] WAP(server)-DHCP
-[ ] radio_io
-[ ] satelite_io
-
-
-################################
-FBSD-MKRX.CONF
-pf-scp_tables
-ssh-OPIE
-jail_30Dturnover-nfs-zfs_quota
-jail_30Dturnover-ftp-zfs_quota
-jail_30Dturnover-mail
-HIVE
-log_scp
