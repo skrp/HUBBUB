@@ -1,30 +1,36 @@
 ###################################
 # HUBBUB - FreeBSD encrypted subnet
+# HUBBUB - Network Kernel Clones
 
-A DHCP attachable (wirless/lan) subnet 
+A DHCP attachable 
+LAN WIFI subnet 
 Point-to-Point Encrypted Tunnels
 
-HUBBUB Network Kernels:
-CC - HUBBUB Command Center
-HB - HUBBUB Node
 
-# CC ######################
+# BENEFITS ####################
+CONFIG SHA VERIFICATION
+PORT CODE SHA/INSPECTION
+HIVE DISTRIBUTIVE NET COMPUTE
+NFS OBFUSTATED DATABANK
+HOMO SHELL ENVIORNMENT
+
+# SERVICES ####################
 [X] Web
 [X] IRC
 [X] RAW
 [ ] 8080
 [ ] MAIL
 [ ] VoIP
-[ ] NTP
 [ ] DNS
+[ ] HTTP
+[ ] IRC
+[X] RAW
+[X] NTP
 [X] HIVE
 [X] NET_nfs
 [X] NET_ftp
-[ ] NET_vpn PSK-OTP
 [ ] radio_io
 [ ] satelite_io
-
-# HB #####################
 [X] FTP
 [X] SSH-PSK-OPIE
 [X] SCP
@@ -34,6 +40,8 @@ HB - HUBBUB Node
 [X] LAN(server)-DHCP
 [X] WIFI(client)-DHCP
 [X] WAP(server)-DHCP
+
+
 
 
 ################################
