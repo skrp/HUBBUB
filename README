@@ -6,7 +6,6 @@ A DHCP attachable
 LAN WIFI subnet 
 Point-to-Point Encrypted Tunnels
 
-
 # BENEFITS ####################
 CONFIG SHA VERIFICATION
 PORT CODE SHA/INSPECTION
@@ -16,6 +15,8 @@ HOMO SHELL ENVIORNMENT
 ICMP MORSE ALARM
 PSK OPIE AUTHENTICATION
 GROUP PUZZEL ESCALATION
+NET TABLE NAMESERVICE [net ban jail blacklist]
+FULL CAPABILITY NODES [if drives nfs server]
 
 # SERVICES ####################
 [X] Web
@@ -23,8 +24,8 @@ GROUP PUZZEL ESCALATION
 [X] RAW
 [ ] 8080
 [ ] MAIL
-[ ] VoIP
 [ ] DNS
+[ ] RX (voice-recording exchange)
 [ ] HTTP
 [ ] IRC
 [X] RAW
@@ -32,8 +33,6 @@ GROUP PUZZEL ESCALATION
 [X] HIVE
 [X] NET_nfs
 [X] NET_ftp
-[ ] radio_io
-[ ] satelite_io
 [X] FTP
 [X] SSH-PSK-OPIE
 [X] SCP
@@ -43,6 +42,8 @@ GROUP PUZZEL ESCALATION
 [X] LAN(server)-DHCP
 [X] WIFI(client)-DHCP
 [X] WAP(server)-DHCP
+[ ] radio_io
+[ ] satelite_io
 
 
 ################################
