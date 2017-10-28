@@ -30,7 +30,6 @@ FULL CAPABILITY NODES [if drives nfs server]
 [X] Web
 [X] IRC
 [X] RAW
-[X] RAW
 [X] NTP
 [X] HIVE
 [X] NET_nfs
