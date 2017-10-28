@@ -1,0 +1,9 @@
+# FILE SYSTEM #########################
+/net
+/HIVE
+/key
+/home
+/nfso
+/nfsr
+/www
+/printer
