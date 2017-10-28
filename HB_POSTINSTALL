@@ -10,12 +10,8 @@ vim
 screen
 cmatrix
 opensmtpd
-opensmtpd-extras-filter-perl
-opensmtpd-extras-tool-stats
 nmap
 squid
-squidanalyzer
-squidguard
 unreal
 
 # PERL MODS ###########################
