@@ -1,3 +1,42 @@
+# BSD PORTS ###########################
+## make fetch from /usr/ports/$pkg_path
+## cp /usr/ports/distfiles/$pkg /usb/distfiles
+sudo
+perl5
+vsftpd
+openntpd
+bash
+vim
+screen
+cmatrix
+opensmtpd
+opensmtpd-extras-filter-perl
+opensmtpd-extras-tool-stats
+nmap
+squid
+squidanalyzer
+squidguard
+unreal
+
+# PERL MODS ###########################
+## cd /usb/perl/
+## cpan -g $mod
+LWP::UserAgent
+File::Find::Rule
+Digest::SHA
+Parallel::ForkManager
+File::LibMagic
+List::Utils
+Const::Fast
+Archive::Any
+LWP::Protocol::https
+
+
+
+
+
+
+
 
 # ONETIMEONLY ##############
 zfs create zroot/nfs;
@@ -18,27 +57,3 @@ echo 'console none unknown off insecure' >> /etc/ttys;
 echo 'crypt_default=blf' >> /etc/auth.conf;
 sed 'passwd_format="blf"'
 
-
-
-pkg install sudo;
-pkg install perl5;
-pkg install vsftpd;
-pkg install openntpd;
-pkg install bash;
-pkg install vim;
-pkg install screen;
-pkg install cmatrix;
-pkg install opensmtpd;
-pkg install opensmtpd-extras-filter-perl;
-pkg install opensmtpd-extras-tool-stats;
-pkg install nmap;
-pkg install squid;
-pkg install squidanalyzer;
-pkg install squidguard;
-
-cpan install LWP::UserAgent;
-cpan install File::Find::Rule;
-cpan install Digest::SHA;
-cpan install Parallel::ForkManager;
-cpan install File::LibMagic;
-cpan install List::Utils;
