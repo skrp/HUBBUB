@@ -3,10 +3,12 @@
 #######################
 
 # PSK DATABANK ################# 
+One Time Only use
+
 sha.tar = {{{ ida_rsa ida_rsa.pub known_hosts }}}
 
 # CALENDAR #############
-One Day Only use
+Every Day Disposed
 
 sha.tar = calander(day)
 tar -xC ~/.ssh/ -f sha.tar
