@@ -1,0 +1,6 @@
+#############################
+# SKEL - user home structure
+# .ssh - readonly
+# bash_profile - readonly
+# o - owner writeable
+# bin - readonly
