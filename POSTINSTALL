@@ -1,12 +1,10 @@
 #!/usr/local/bin/perl
 use strict use warnings;
 #
-# BSD PORTS ###########################
-## make fetch from /usr/ports/$pkg_path
-## cp /usr/ports/distfiles/$pkg /usb/distfiles 
+##################################
+# POSTINSTALL - hubbub enviornment
 
-
-@ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
+my @ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
   'p_lwp_useragent', ', 'p_file_find', ', 'p_digest_sha', ', 'p_parallel_forkmanager', ', 'p_file_libmagic', ', \
   'p_list_utils', ', 'p_const_fast', ', 'p_archive_any', ', 'p_lwp_https', ', 'p_', ', 'p_');
 
@@ -20,18 +18,20 @@ for my $it (@ports)
   `make install`;
 }
 
+########################################
+# GRAB BY
+
+# BSD PORTS ###########################
+## make fetch from /usr/ports/$pkg_path
+## cp /usr/ports/distfiles/$pkg /usb/distfiles 
+
 # PERL MODS ###########################
 ## cd /usb/perl/
 ## cpan -g $mod
-LWP::UserAgent
-File::Find::Rule
-Digest::SHA
-Parallel::ForkManager
-File::LibMagic
-List::Utils
-Const::Fast
-Archive::Any
-LWP::Protocol::https
+my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
+  'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
+  'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
+  '', '');
 
 # CONFIG OVERWRITE ####################
 
