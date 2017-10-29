@@ -1,5 +1,8 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
+use Exporter;
+package HB::NFS_SETUP;
+@EXPORT = qw(nfs_setup);
 #
 ###########################
 # NFS_SETUP - One Time Only
