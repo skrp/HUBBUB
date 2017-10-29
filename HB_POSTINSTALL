@@ -1,6 +1,9 @@
 # BSD PORTS ###########################
 ## make fetch from /usr/ports/$pkg_path
 ## cp /usr/ports/distfiles/$pkg /usb/distfiles 
+#
+#!/usr/local/bin/perl
+use strict use warnings;
 
 @ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
   'p_lwp_useragent', ', 'p_file_find', ', 'p_digest_sha', ', 'p_parallel_forkmanager', ', 'p_file_libmagic', ', \
