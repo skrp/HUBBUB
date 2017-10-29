@@ -2,13 +2,15 @@
 # ASTROLOGOCAL ENGINE #
 #######################
 
-# PSK ################# 
-ida_rsa 
-ida_rsa.pub
+# PSK DATABANK ################# 
+tarball {{{ ida_rsa ida_rsa.pub known_hosts }}}
+.
+.
+.
 
 # CALENDAR #############
 One Day Only use
 
-root mv $sha ~/.ssh/ida_rsa
-root mv $sha ~/.ssh/ida_rsa.pub
-root mv $sha ~/.ssh/known_hosts
+tarball_sha = calander(day)
+tar -xC ~/.ssh/ -f sha.tar
+
