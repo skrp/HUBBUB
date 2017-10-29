@@ -3,14 +3,11 @@
 #######################
 
 # PSK DATABANK ################# 
-tarball {{{ ida_rsa ida_rsa.pub known_hosts }}}
-.
-.
-.
+sha.tar = {{{ ida_rsa ida_rsa.pub known_hosts }}}
 
 # CALENDAR #############
 One Day Only use
 
-tarball_sha = calander(day)
+sha.tar = calander(day)
 tar -xC ~/.ssh/ -f sha.tar
 
