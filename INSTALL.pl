@@ -27,30 +27,27 @@ print colored("INSTALL.pl: yes or no -> is /usb loaded \n", 'bold_yellow');
 my $yn = <STDIN>; chomp $yn;
 die "/usb needs to be loaded\n Do that then answer yes\n" if ($yn eq 'no');
 
+# BUILD ENVIORNMENT ###############################################
 print colored("INSTALL.pl: lets begin with PORTINSTALL\n", 'green');
 print colored("INSTALL.pl: ERROR portinstall\n", 'bold_red') if (portinstall() < 0);
 print colored("INSTALL.pl: success\n", 'bold_yellow');
-
+# SPAWN USERS ###############################################
 print colored("INSTALL.pl: start USR\n", 'green');
 print colored("INSTALL.pl: ERROR usr\n", 'bold_red') if (usr() < 0);
 print colored("INSTALL.pl: success\n", 'bold_yellow');
-
+# SECURE ACCESS ###############################################
 print colored("INSTALL.pl: start PSKOPIE\n", 'green');
 print colored("INSTALL.pl: ERROR pskopie\n", 'bold_red') if (pskopie < 0);
 print colored("INSTALL.pl: success\n", 'bold_yellow');
-
-print colored("INSTALL.pl: start CONF\n", 'green');
-print colored("INSTALL.pl: ERROR conf\n", 'bold_red') if (conf() < 0);
-print colored("INSTALL.pl: success\n", 'bold_yellow');
-
-print colored("INSTALL.pl: start NFS_SETUP\n", 'green');
-print colored("INSTALL.pl: ERROR nfs_setup\n", 'bold_red') if (nfs_setup() < 0);
-print colored("INSTALL.pl: success\n", 'bold_yellow');
-
+# XFER KEYS ###############################################
 print colored("INSTALL.pl: start KEY\n", 'green');
 print colored("INSTALL.pl: ERROR key\n", 'bold_red') if (key() < 0);
 print colored("INSTALL.pl: success\n", 'bold_yellow');
-
-
-print colored("INSTALL.pl: \n", 'green');
-print colored("INSTALL.pl: \n", 'green');
+# CONFIGURE ###############################################
+print colored("INSTALL.pl: start CONF\n", 'green');
+print colored("INSTALL.pl: ERROR conf\n", 'bold_red') if (conf() < 0);
+print colored("INSTALL.pl: success\n", 'bold_yellow');
+# NFS ESTABLISH ###############################################
+print colored("INSTALL.pl: start NFS_SETUP\n", 'green');
+print colored("INSTALL.pl: ERROR nfs_setup\n", 'bold_red') if (nfs_setup() < 0);
+print colored("INSTALL.pl: success\n", 'bold_yellow');
