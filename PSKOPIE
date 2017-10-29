@@ -1,4 +1,7 @@
 #!/usr/local/bin/perl
+use Exporter;
+package HB::PSKOPIE;
+@EXPORT = qw(pskopie);
 #
 # PSKOPIE #####################################
 # Pre Shared Key Onetime Password In Everything
