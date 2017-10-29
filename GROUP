@@ -4,8 +4,30 @@
 # {{ prime }} heir lord root
 
 # norm #######################
+mkdir /usr/home/norm/;
+chmod 550;
+chown norm;
+
+mkdir /usr/home/norm/.ssh;
+chmod 500;
+chown norm;
+
+mkdir /usr/home/norm/bin;
+chmod 550;
+chown norm;
+
+mkdir /usr/home/norm/o;
+chmod 700;
+chown norm;
+
+echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> .bash_profile;
+echo "alia c=\"clear\"" >> .bash_profile;
+chmod 500;
+chown norm;
+
 pw groupadd norm
-pw useradd -n norm -g norm -d /usr/home/norm -s rbash -mk /MK/skel
+pw useradd -n norm -g norm -d /usr/home/norm -s rbash
+
 # - norm
 
 # seer #######################
