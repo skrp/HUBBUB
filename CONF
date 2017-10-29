@@ -1,5 +1,8 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
+use Exporter;
+package HB::;
+@EXPORT = qw();
 #
 ###########################
 # CONF - One Time Only
