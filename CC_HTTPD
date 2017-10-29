@@ -1,8 +1,0 @@
-#!/bin/sh
-#######################
-# HUBBUB - httpd config
-
-# STEPS #############
-
-# 1 #################
-echo 'httpd_flags=' >> /etc/rc.conf.local;
