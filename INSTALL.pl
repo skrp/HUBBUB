@@ -1,6 +1,7 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
 #
+use Term::ANSIColor;
 use HB::CONF qw(conf);
 use HB::NFS_SETUP qw(nfs_setup);
 use HB::PORTINSTALL qw(portinstall);
@@ -12,12 +13,13 @@ my @lines = <$nfh>;
 close $nfh; chomp @lines;
 my $num = @lines;
 
-print "INSTALL.pl: cmdr name?  ";
+print colored("INSTALL.pl: cmdr name?", 'bold_yellow');
 my $cmdr = <STDIN>;
-print "\nINSTALL.pl: cmdr I await your orders!\n";  
+print colored("\nINSTALL.pl: $cmdr I await your orders!\n", 'bold_yellow');
 
-print "HUBBUB networks will rise\n";
-print "Behold birth of clone $num\n";
-print "Created after the image of skrp god!\n";
-print "!!! viva skrp iii\n";
+print colored("INSTALL.pl: HUBBUB networks will rise\n", 'bold_red');
+print colored("INSTALL.pl: Behold birth of clone $num\n", 'bold_red');
+print colored("INSTALL.pl: Created after the image of skrp god!\n", 'bold_red');
+print colored("INSTALL.pl: !!! viva skrp iii\n",'bold_red');
 
+print colored("INSTALL.pl: lets begin with PORTINSTALL\n", 'green' );
