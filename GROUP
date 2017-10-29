@@ -25,8 +25,8 @@ echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
 chmod 500;
 chown norm;
 
-pw groupadd norm
-pw useradd -n norm -g norm -d /usr/home/norm -s rbash
+pw groupadd norm;
+pw useradd -n norm -g norm -d /usr/home/norm -s rbash;
 
 # seer #######################
 mkdir /usr/home/seer/;
@@ -50,8 +50,8 @@ echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
 chmod 500;
 chown seer;
 
-pw groupadd seer
-pw useradd -n seer -g seer -d /usr/home/seer -s rbash
+pw groupadd seer;
+pw useradd -n seer -g seer -d /usr/home/seer -s rbash;
 
 # heir #######################
 mkdir /usr/home/heir/;
@@ -75,7 +75,7 @@ echo "alia c=\"clear\"" >> /usr/home/heir/.bash_profile;
 chmod 500;
 chown heir;
 
-pw groupadd heir
+pw groupadd heir;
 pw useradd -n heir -g heir -d /usr/home/heir -s rbash;
 
 # lord #######################
