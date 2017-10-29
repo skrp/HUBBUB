@@ -1,1 +1,14 @@
+#######################
+# ASTROLOGOCAL ENGINE #
+#######################
 
+# PSK ################# 
+ida_rsa 
+ida_rsa.pub
+
+# CALENDAR #############
+One Day Only use
+
+root mv $sha ~/.ssh/ida_rsa
+root mv $sha ~/.ssh/ida_rsa.pub
+root mv $sha ~/.ssh/known_hosts
