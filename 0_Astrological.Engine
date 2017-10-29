@@ -4,8 +4,9 @@
 chron job replace .ssh contents
 
 # PSK DATABANK ################# 
-1M Tarballs
-One Time Only use
+1M Tarballs 
+Net-Wide Encryption Source
+One Time Only Use
 
 sha.tar = {{{ ida_rsa ida_rsa.pub known_hosts }}}
 
