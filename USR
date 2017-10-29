@@ -1,5 +1,8 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
+use Exporter;
+package HB::USR;
+@EXPORT = qw(usr);
 #
 ##############################
 # USR - unix user group setup
