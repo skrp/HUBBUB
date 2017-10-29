@@ -45,3 +45,14 @@ MASTERKEY ACCESS
 [X] LAN(server)-DHCP
 [X] WIFI(client)-DHCP
 [X] WAP(server)-DHCP
+
+# FILE SYSTEM #########################
+/net
+/HIVE
+/keys
+/home
+/nfso
+/nfsr
+/www
+/printer
+/MK
