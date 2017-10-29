@@ -1,21 +1,24 @@
+#!/usr/local/bin/perl
+#
 # PSKOPIE #####################################
 # Pre Shared Key Onetime Password In Everything
-#
-#!/usr/local/bin/perl
-my ($user) = @ARGV;
+
+sub pskopie
+{
+  my ($user) = @_;
 # PSK #########################################
-my $key = keygen($user);
+  my $key = keygen($user);
 
-open(my $kfh, '>', '/host)
-print $kfh $key;
+  open(my $kfh, '>', '/host)
+  print $kfh $key;
 
-`mkdir /keys`
-`chmod 550`
-`chown root`
+  `mkdir /keys`
+  `chmod 550`
+  `chown root`
 
-`cp /usb/keys/* /keys/`
+  `cp /usb/keys/* /keys/`
 
 # OPIE ########################################
-`su $user && opieaccess -f && exit`
-`su $user && opiekeys && exit`
-
+  `su $user && opieaccess -f && exit`
+  `su $user && opiekeys && exit`
+}
