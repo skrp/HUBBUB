@@ -18,24 +18,6 @@ for my $it (@ports)
   `make install`;
 }
 
-########################################
-# GRAB BY
-
-# BSD PORTS ###########################
-## make fetch from /usr/ports/$pkg_path
-## cp /usr/ports/distfiles/$pkg /usb/distfiles 
-
-# PERL MODS ###########################
-sub pop_dist
-{
-  `cd /usb/dist/`
-  my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
-    'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
-    'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
-    '', '');
-  for my $mod (@mod)
-    { `cpan -g $mod`; }
-}
 # CONFIG OVERWRITE ####################
 
 
@@ -70,3 +52,22 @@ sub pop_dist
 `echo 'crypt_default=blf' >> /etc/auth.conf`;
 `sed 'passwd_format="blf"'`;
 
+
+########################################
+# GRAB BY                              #
+########################################
+# BSD PORTS ###########################
+## make fetch from /usr/ports/$pkg_path
+## cp /usr/ports/distfiles/$pkg /usb/distfiles 
+
+# PERL MODS ###########################
+sub pop_dist
+{
+  `cd /usb/dist/`
+  my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
+    'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
+    'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
+    '', '');
+  for my $mod (@mod)
+    { `cpan -g $mod`; }
+}
