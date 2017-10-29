@@ -1,9 +1,0 @@
-##########################
-# IRC - network relay chat
-# CHANNELS ###############
-network
-private (hubbub to hubbub)
-public
-# FORWARDS ###############
-hubbub tags in main channel forwared to private channels
-public channels are forwarded to irc networks
