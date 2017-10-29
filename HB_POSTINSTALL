@@ -2,14 +2,19 @@
 ## make fetch from /usr/ports/$pkg_path
 ## cp /usr/ports/distfiles/$pkg /usb/distfiles 
 
-@ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal')
+@ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
+  'p_lwp_useragent', ', 'p_file_find', ', 'p_digest_sha', ', 'p_parallel_forkmanager', ', 'p_file_libmagic', ', \
+  'p_list_utils', ', 'p_const_fast', ', 'p_archive_any', ', 'p_lwp_https', ', 'p_', ', 'p_');
 
 `cd /usb/dist/`
 for my $it (@ports)
 {
   `cd /usb/dist/$it`;
   `tar -xC /usr/ports/$i -f $i`;
-  
+  `.configure`;
+  `make`;
+  `make install`;
+}
 
 # PERL MODS ###########################
 ## cd /usb/perl/
