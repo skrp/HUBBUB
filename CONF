@@ -6,5 +6,20 @@ use strict; use warnings;
 
 sub conf
 {
+  `cp /usb/config/pf.conf /etc/pf.conf`;
+  `cp /usb/config/ntpd.conf /usr/local/etc/ntpd.conf`;
+  `cp /usb/config/rc.conf /etc/rc.conf`;
+  `cp /usb/config/resolv.conf /etc/resolv.conf`;
+  `cp /usb/config/sshd_config /etc/ssh/sshd_config`;
+  `cp /usb/config/start_if. /etc/start_if.`;
+  `cp /usb/config/start_if. /etc/start_if.`;
+  `cp /usb/config/ttys /etc/ttys`;
+  `cp /usb/config/KERN /usr/src/sys/amd64/conf/KERN`;
+  `cp /usb/config/sysctl.conf /etc/sysctl.conf`;
+  `cp /usb/config/jail.conf /etc/jail.conf`;
+  `cp /usb/config/login.conf /etc/login.conf`;
+  `cp /usb/config/wpa_supplicant /etc/wpa_supplicant.conf`;
 
+#`cp /usb/config/ /etc/`;
+#`cp /usb/config/ /etc/`;
 }
