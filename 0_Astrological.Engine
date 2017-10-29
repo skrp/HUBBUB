@@ -12,6 +12,7 @@ sha.tar = {{{ ida_rsa ida_rsa.pub known_hosts }}}
 # CALENDAR #############
 Every Day Disposed
 
-sha.tar = calander(day)
-tar -xC ~/.ssh/ -f sha.tar
+perl calander.pl day 
+>>> sha.tar
+>>> tar -xC ~/.ssh/ -f sha.tar
 
