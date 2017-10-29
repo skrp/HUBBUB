@@ -4,25 +4,27 @@
 # {{ prime }} heir lord root
 
 # norm #######################
-pw groupadd
+pw groupadd norm
+pw useradd -n norm -g norm -s rbash -mk /MK/skel
 # - norm
 
 # seer #######################
-pw groupadd
+pw groupadd seer
+pw useradd -n seer -g seer -s rbash -mk /MK/sekl
 # - seer
 
 # heir #######################
 pw groupadd heir
+pw useradd -n heir -g heir -s rbash -mk /MK/sekl
 # - heir
 
 # lord #######################
-pw groupadd wheel
+pw useradd -n lord -g wheel -s bash -mk /MK/sekl
+pw groupmod heir -m lord
 # - heir
 # - wheel
 
 # root #######################
 # - wheel
-
 # nologin ####################
-
 # vpsrsh #####################
