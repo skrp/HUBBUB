@@ -7,3 +7,4 @@
 /nfsr
 /www
 /printer
+/MK # MasterKey
