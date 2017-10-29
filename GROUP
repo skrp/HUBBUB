@@ -5,21 +5,21 @@
 
 # norm #######################
 pw groupadd norm
-pw useradd -n norm -g norm -s rbash -mk /MK/skel
+pw useradd -n norm -g norm -d /usr/home/norm -s rbash -mk /MK/skel
 # - norm
 
 # seer #######################
 pw groupadd seer
-pw useradd -n seer -g seer -s rbash -mk /MK/sekl
+pw useradd -n seer -g seer -d /usr/home/seer -s rbash -mk /MK/sekl
 # - seer
 
 # heir #######################
 pw groupadd heir
-pw useradd -n heir -g heir -s rbash -mk /MK/sekl
+pw useradd -n heir -g heir -d /usr/home/heir -s rbash -mk /MK/sekl
 # - heir
 
 # lord #######################
-pw useradd -n lord -g wheel -s bash -mk /MK/sekl
+pw useradd -n lord -g wheel -d /home/lord -s bash -mk /MK/sekl
 pw groupmod heir -m lord
 # - heir
 # - wheel
