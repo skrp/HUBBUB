@@ -100,7 +100,6 @@ echo "alia c=\"clear\"" >> /home/lord/.bash_profile;
 chmod 500;
 chown heir;
 
-pw groupadd heir
 pw useradd -n lord -g wheel -d /home/lord -s bash
 pw groupmod heir -m lord
 
