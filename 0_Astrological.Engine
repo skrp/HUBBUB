@@ -20,3 +20,7 @@ calander.pl day && rm calander.pl
 # CALENDAR GEN ##############
 calander_gen.pl psk calander net_calender
 >>> calander.pl
+
+# PSK POPULATE ################# 
+DEMON gen_psk_set
+>>> sha.tar
