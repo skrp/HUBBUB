@@ -7,7 +7,7 @@ use HB::PORTINSTALL qw(portinstall);
 use HB::PSKOPIE qw(pskopie);
 use HB::USR qw(usr);
 
-open(my $nfh, '<', '/usb/register`);
+open(my $nfh, '<', '/usb/register');
 my @lines = <$nfh>;
 close $nfh; chomp @lines;
 my $num = @lines;
