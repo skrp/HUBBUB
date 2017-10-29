@@ -26,13 +26,16 @@ for my $it (@ports)
 ## cp /usr/ports/distfiles/$pkg /usb/distfiles 
 
 # PERL MODS ###########################
-## cd /usb/perl/
-## cpan -g $mod
-my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
-  'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
-  'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
-  '', '');
-
+sub pop_dist
+{
+  `cd /usb/dist/`
+  my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
+    'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
+    'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
+    '', '');
+  for my $mod (@mod)
+    { `cpan -g $mod`; }
+}
 # CONFIG OVERWRITE ####################
 
 
