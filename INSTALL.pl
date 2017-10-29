@@ -1,7 +1,7 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
 #
-use Term::ANSIColor;
+use Term::ANSIColor qw(colored);
 use HB::PORTINSTALL qw(portinstall);
 use HB::USR qw(usr);
 use HB::PSKOPIE qw(pskopie);
