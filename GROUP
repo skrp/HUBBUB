@@ -1,8 +1,28 @@
 # GROUP ########################
-nologin
-vpsrsh
-norm
-seer
-heir
-lord
-root
+# {{ null }} nologin vpsrsh 
+# {{ low }} norm seer
+# {{ prime }} heir lord root
+
+# norm #######################
+pw groupadd
+# - norm
+
+# seer #######################
+pw groupadd
+# - seer
+
+# heir #######################
+pw groupadd heir
+# - heir
+
+# lord #######################
+pw groupadd wheel
+# - heir
+# - wheel
+
+# root #######################
+# - wheel
+
+# nologin ####################
+
+# vpsrsh #####################
