@@ -1,0 +1,21 @@
+#!/usr/local/bin/perl
+use strict; use warnings;
+
+########################################
+# GRAB BY                              #
+########################################
+# BSD PORTS ###########################
+## make fetch from /usr/ports/$pkg_path
+## cp /usr/ports/distfiles/$pkg /usb/distfiles 
+
+# PERL MODS ###########################
+sub pop_dist
+{
+  `cd /usb/dist/`
+  my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
+    'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
+    'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
+    '', '');
+  for my $mod (@mod)
+    { `cpan -g $mod`; }
+}
