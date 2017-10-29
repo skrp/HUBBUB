@@ -7,6 +7,7 @@ use HB::USR qw(usr);
 use HB::PSKOPIE qw(pskopie);
 use HB::CONF qw(conf);
 use HB::NFS_SETUP qw(nfs_setup);
+use HB::KEY qw(key);
 
 open(my $nfh, '<', '/usb/register');
 my @lines = <$nfh>;
@@ -44,6 +45,10 @@ print colored("INSTALL.pl: success\n", 'bold_yellow');
 
 print colored("INSTALL.pl: start NFS_SETUP\n", 'green');
 print colored("INSTALL.pl: ERROR nfs_setup\n", 'bold_red') if (nfs_setup() < 0);
+print colored("INSTALL.pl: success\n", 'bold_yellow');
+
+print colored("INSTALL.pl: start KEY\n", 'green');
+print colored("INSTALL.pl: ERROR key\n", 'bold_red') if (key() < 0);
 print colored("INSTALL.pl: success\n", 'bold_yellow');
 
 
