@@ -1,9 +1,0 @@
-################################
-# STANDARD OPERATING PROCEEDURE 
-
-boot to usb
-live cd
-
-camcontrol devlist
-dd if=/dev/zero of= bs=4M &
-
