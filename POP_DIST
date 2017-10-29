@@ -1,17 +1,22 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
-
+#
 ########################################
 # GRAB BY                              #
-########################################
+
 # BSD PORTS ###########################
+sub pop_dist1
+{
+  `cd /usr/ports/security/nmap && make fetch`;
+  `cp /usrports/distfiles/nmap* /usb/dist/`;
+}
 ## make fetch from /usr/ports/$pkg_path
 ## cp /usr/ports/distfiles/$pkg /usb/distfiles 
 
 # PERL MODS ###########################
-sub pop_dist
+sub pop_dist2
 {
-  `cd /usb/dist/`
+  `cd /usb/dist/`;
   my @mod = ('LWP::UserAgent', 'File::Find::Rule', 'Digest::SHA', \
     'Parallel::ForkManager', 'File::LibMagic', 'List::Utils', \
     'Const::Fast', 'Archive::Any', 'LWP::Protocol::https', \
