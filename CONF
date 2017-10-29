@@ -1,0 +1,10 @@
+#!/usr/local/bin/perl
+use strict; use warnings;
+#
+###########################
+# CONF - One Time Only
+
+sub conf
+{
+
+}
