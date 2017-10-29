@@ -76,7 +76,7 @@ chmod 500;
 chown heir;
 
 pw groupadd heir
-pw useradd -n heir -g heir -d /usr/home/heir -s rbash
+pw useradd -n heir -g heir -d /usr/home/heir -s rbash;
 
 # lord #######################
 mkdir /home/lord/;
@@ -98,10 +98,10 @@ chown lord;
 echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /home/lord/.bash_profile;
 echo "alia c=\"clear\"" >> /home/lord/.bash_profile;
 chmod 500;
-chown heir;
+chown lord;
 
-pw useradd -n lord -g wheel -d /home/lord -s bash
-pw groupmod heir -m lord
+pw useradd -n lord -g wheel -d /home/lord -s bash;
+pw groupmod heir -m lord;
 
 # root #######################
 # nologin ####################
