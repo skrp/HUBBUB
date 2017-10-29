@@ -1,5 +1,8 @@
 #!/usr/local/bin/perl
 use strict; use warnings;
+use Exporter;
+package HB::POP_DIST;
+@EXPORT = qw(pop_dist1 pop_dist2);
 #
 ########################################
 # GRAB BY                              #
