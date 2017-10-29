@@ -18,8 +18,8 @@ sub conf
   `cp /usb/config/sysctl.conf /etc/sysctl.conf`;
   `cp /usb/config/jail.conf /etc/jail.conf`;
   `cp /usb/config/login.conf /etc/login.conf`;
-  `cp /usb/config/wpa_supplicant /etc/wpa_supplicant.conf`;
+  `cp /usb/config/wpa_supplicant.conf /etc/wpa_supplicant.conf`;
+  `cp /usb/config/exports /etc/exports`;
 
-#`cp /usb/config/ /etc/`;
 #`cp /usb/config/ /etc/`;
 }
