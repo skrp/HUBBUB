@@ -1,0 +1,115 @@
+#!/usr/local/bin/perl
+use strict; use warnings;
+#
+##############################
+# USR - unix user group setup
+
+# {{ null }} nologin vpsrsh 
+# {{ low }} norm seer
+# {{ prime }} heir lord root
+
+sub usr
+{
+# norm #######################
+  mkdir /usr/home/norm/;
+  chmod 550;
+  chown norm;
+
+  mkdir /usr/home/norm/.ssh;
+  chmod 500;
+  chown norm;
+
+  mkdir /usr/home/norm/bin;
+  chmod 550;
+  chown norm;
+
+  mkdir /usr/home/norm/o;
+  chmod 700;
+  chown norm;
+
+  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/seer/.bash_profile;
+  echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
+  chmod 500;
+  chown norm;
+
+  pw groupadd norm;
+  pw useradd -n norm -g norm -d /usr/home/norm -s rbash;
+
+# seer #######################
+  mkdir /usr/home/seer/;
+  chmod 550;
+  chown seer;
+
+  mkdir /usr/home/seer/.ssh;
+  chmod 500;
+  chown seer;
+
+  mkdir /usr/home/seer/bin;
+  chmod 550;
+  chown seer;
+
+  mkdir /usr/home/seer/o;
+  chmod 700;
+  chown seer;
+
+  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/seer/.bash_profile;
+  echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
+  chmod 500;
+  chown seer;
+
+  pw groupadd seer;
+  pw useradd -n seer -g seer -d /usr/home/seer -s rbash;
+
+# heir #######################
+  mkdir /usr/home/heir/;
+  chmod 550;
+  chown heir;
+
+  mkdir /usr/home/heir/.ssh;
+  chmod 500;
+  chown heir;
+
+  mkdir /usr/home/heir/bin;
+  chmod 550;
+  chown heir;
+
+  mkdir /usr/home/heir/o;
+  chmod 700;
+  chown heir;
+
+  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/heir/.bash_profile;
+  echo "alia c=\"clear\"" >> /usr/home/heir/.bash_profile;
+  chmod 500;
+  chown heir;
+
+  pw groupadd heir;
+  pw useradd -n heir -g heir -d /usr/home/heir -s rbash;
+
+# lord #######################
+  mkdir /home/lord/;
+  chmod 550;
+  chown lord;
+  
+  mkdir /usr/home/lord/.ssh;
+  chmod 500;
+  chown lord;
+
+  mkdir /usr/home/lord/bin;
+  chmod 550;
+  chown lord;
+
+mkdir /usr/home/lord/o;
+chmod 700;
+chown lord;
+
+echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /home/lord/.bash_profile;
+echo "alia c=\"clear\"" >> /home/lord/.bash_profile;
+chmod 500;
+chown lord;
+
+pw useradd -n lord -g wheel -d /home/lord -s bash;
+pw groupmod heir -m lord;
+
+# root #######################
+# nologin ####################
+# vpsrsh #####################
