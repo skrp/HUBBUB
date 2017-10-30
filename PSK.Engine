@@ -1,6 +1,18 @@
-#######################
-# ASTROLOGOCAL ENGINE #
-#######################
+#################################
+# PSKOPIE - ASTROLOGOCAL ENGINE #
+#################################
+Pre Shared Keys
+Onetime Password In Everything
+
+Elliptic Curve Encrypted Tunnels
+Ofuscated Astrological Engine
+
+Dual Layer Authentication
+Dual Layer Privacy
+
+//////////////////////////////////
+# PSK
+
 chron job replace .ssh contents
 
 # PSK DATABANK ################# 
@@ -24,3 +36,9 @@ calander_gen.pl psk calander net_calender
 # PSK POPULATE ################# 
 DEMON gen_psk_set
 >>> sha.tar
+
+/////////////////////////////////
+# OPIE
+
+Onetime Password In Everything login
+Net OPIE Register
