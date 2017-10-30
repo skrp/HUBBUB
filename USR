@@ -2,7 +2,7 @@
 use strict; use warnings;
 use Exporter;
 package HB::USR;
-@EXPORT = qw(usr);
+my @EXPORT = qw(usr);
 #
 ##############################
 # USR - unix user group setup
@@ -11,108 +11,121 @@ package HB::USR;
 # {{ low }} norm seer
 # {{ prime }} heir lord root
 
-sub usr
+# TEST #######################
+usr();
+
+sub usr 
 {
 # norm #######################
-  mkdir /usr/home/norm/;
-  chmod 550;
-  chown norm;
+  `pw groupadd norm`;
+  `pw useradd -n norm -g norm -d /usr/home/norm -s /usr/local/bin/bash`;
 
-  mkdir /usr/home/norm/.ssh;
-  chmod 500;
-  chown norm;
+  `mkdir /usr/home/norm/`;
+  `chmod 550 /usr/home/norm/`;
+  `chown norm /usr/home/norm/`;
 
-  mkdir /usr/home/norm/bin;
-  chmod 550;
-  chown norm;
+  `mkdir /usr/home/norm/.ssh/`;
+  `chmod -R 500 /usr/home/norm/.ssh/`;
+  `chown norm /usr/home/norm/.ssh/`;
 
-  mkdir /usr/home/norm/o;
-  chmod 700;
-  chown norm;
+  `mkdir /usr/home/norm/bin/`;
+  `cp -R /usb/bin /usr/home/bin/`;
+  `chmod -R 500 /usr/home/norm/bin/`;
+  `chown norm /usr/home/norm/bin/`;
 
-  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/seer/.bash_profile;
-  echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
-  chmod 500;
-  chown norm;
+  `mkdir /usr/home/norm/o/`;
+  `chmod 700 /usr/home/norm/o/`;
+  `chown norm /usr/home/norm/o/`;
+ 
+  `cp /usb/distfiles/.bash_profile /usr/home/norm/.bash_profile`;
+  `chmod 500 /usr/home/norm/.bash_profile`;
+  `chown norm /usr/home/norm/.bash_profile`;
 
-  pw groupadd norm;
-  pw useradd -n norm -g norm -d /usr/home/norm -s rbash;
+  `openssl ecparam -name c2tnb431r1 -genkey -out /usr/home/norm/.ssh/id_rsa -param_enc explicit`;
+  `openssl ec -in /usr/home/norm/.ssh/id_rsa -pubout -out /usr/home/norm/.ssh/id_rsa.pub -param_enc explicit`;
+# seer  #######################
+  `pw groupadd seer`;
+  `pw useradd -n seer -g seer -d /usr/home/seer -s /usr/local/bin/bash`;
 
-# seer #######################
-  mkdir /usr/home/seer/;
-  chmod 550;
-  chown seer;
+  `mkdir /usr/home/seer/`;
+  `chmod 550 /usr/home/seer`;
+  `chown seer /usr/home/seer/`;
 
-  mkdir /usr/home/seer/.ssh;
-  chmod 500;
-  chown seer;
+  `mkdir /usr/home/seer/.ssh`;
+  `chmod -R 500 /usr/home/seer/.ssh`;
+  `chown seer /usr/home/seer/.ssh`;
 
-  mkdir /usr/home/seer/bin;
-  chmod 550;
-  chown seer;
+  `mkdir /usr/home/seer/bin`;
+  `cp -R /usb/bin /usr/home/seer/bin/`;
+  `chmod -R 500 /usr/home/seer/bin`;
+  `chown seer /usr/home/seer/bin`;
 
-  mkdir /usr/home/seer/o;
-  chmod 700;
-  chown seer;
+  `mkdir /usr/home/seer/o`;
+  `chmod 700 /usr/home/seer/o`;
+  `chown seer /usr/home/seer/o`;
 
-  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/seer/.bash_profile;
-  echo "alia c=\"clear\"" >> /usr/home/seer/.bash_profile;
-  chmod 500;
-  chown seer;
+  `cp /usb/distfiles/.bash_profile /usr/home/seer/.bash_profile`;
+  `chmod 500 /usr/home/seer/.bash_profile`;
+  `chown seer /usr/home/seer/.bash_profile`;
 
-  pw groupadd seer;
-  pw useradd -n seer -g seer -d /usr/home/seer -s rbash;
+  `openssl ecparam -name c2tnb431r1 -genkey -out /usr/home/seer/.ssh/id_rsa -param_enc explicit`;
+  `openssl ec -in /usr/home/seer/.ssh/id_rsa -pubout -out /usr/home/seer/.ssh/id_rsa.pub -param_enc explicit`;
+# heir  #######################
+# OPIE (README)
+  `pw groupadd heir`;
+  `mkdir /usr/home/heir/`;
+  `pw useradd -n heir -g heir -d /usr/home/heir -s /usr/local/bin/bash`;
 
-# heir #######################
-  mkdir /usr/home/heir/;
-  chmod 550;
-  chown heir;
+  `chmod 550 /usr/home/heir`;
+  `chown heir /usr/home/heir`;
 
-  mkdir /usr/home/heir/.ssh;
-  chmod 500;
-  chown heir;
+  `mkdir /usr/home/heir/.ssh`;
+  `chmod -R 500 /usr/home/heir/.ssh`;
+  `chown heir /usr/home/heir/.ssh`;
 
-  mkdir /usr/home/heir/bin;
-  chmod 550;
-  chown heir;
+  `mkdir /usr/home/heir/bin`;
+  `cp -R /usb/bin /usr/home/heir/bin/`;
+  `chmod -R 500 /usr/home/heir/bin`;
+  `chown heir /usr/home/heir/bin`;
 
-  mkdir /usr/home/heir/o;
-  chmod 700;
-  chown heir;
+  `mkdir /usr/home/heir/o`;
+  `chmod 700 /usr/home/heir/o`;
+  `chown heir /usr/home/heir/o`;
+ 
+  `cp /usb/distfiles/.bash_profile /usr/home/heir/.bash_profile`;
+  `chmod 500 /usr/home/heir/.bash_profile`;
+  `chown heir /usr/home/heir/.bash_profile`;
 
-  echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /usr/home/heir/.bash_profile;
-  echo "alia c=\"clear\"" >> /usr/home/heir/.bash_profile;
-  chmod 500;
-  chown heir;
-
-  pw groupadd heir;
-  pw useradd -n heir -g heir -d /usr/home/heir -s rbash;
-
+  `openssl ecparam -name c2tnb431r1 -genkey -out /usr/home/heir/.ssh/id_rsa -param_enc explicit`;
+  `openssl ec -in /usr/home/heir/.ssh/id_rsa -pubout -out /usr/home/heir/.ssh/id_rsa.pub -param_enc explicit`;
 # lord #######################
-  mkdir /home/lord/;
-  chmod 550;
-  chown lord;
+# OPIE (README)
+  `mkdir /usr/home/lord/`;
+  `pw useradd -n lord -g wheel -d /usr/home/lord -s /usr/local/bin/bash`;
+
+  `chmod 550 /usr/home/lord`;
+  `chown lord /usr/home/lord/`;
+
+  `mkdir /usr/home/lord/.ssh`;
+  `chmod -R 500 /usr/home/lord/.ssh`;
+  `chown lord /usr/home/lord/.ssh`;
+
+  `mkdir /usr/home/lord/bin`;
+  `chmod -R 500 /usr/home/lord/bin`;
+  `chown lord /usr/home/lord/bin`;
+
+  `mkdir /usr/home/lord/o`;
+  `chmod 700 /usr/home/lord/o`;
+  `chown lord /usr/home/lord/o`;
+ 
+  `cp /usb/distfiles/.bash_profile /usr/home/lord/.bash_profile`;
+  `chmod 500 /usr/home/lord/.bash_profile`;
+  `chown lord /usr/home/lord/.bash_profile`;
   
-  mkdir /usr/home/lord/.ssh;
-  chmod 500;
-  chown lord;
+  `openssl ecparam -name c2tnb431r1 -genkey -out /usr/home/lord/.ssh/id_rsa -param_enc explicit`;
+  `openssl ec -in /usr/home/lord/.ssh/id_rsa -pubout -out /usr/home/lord/.ssh/id_rsa.pub -param_enc explicit`;
 
-  mkdir /usr/home/lord/bin;
-  chmod 550;
-  chown lord;
-
-mkdir /usr/home/lord/o;
-chmod 700;
-chown lord;
-
-echo "export PS1=\"\[\e[32m\]\u\[\e[m\]@\[\e[32;46m\]\h\[\e[m\]>>\[\e[31m\] \[\e[m\] \"" >> /home/lord/.bash_profile;
-echo "alia c=\"clear\"" >> /home/lord/.bash_profile;
-chmod 500;
-chown lord;
-
-pw useradd -n lord -g wheel -d /home/lord -s bash;
-pw groupmod heir -m lord;
-
+  `pw groupmod heir -m lord`;
+}
 # root #######################
-# nologin ####################
-# vpsrsh #####################
+# OPIE (README)
