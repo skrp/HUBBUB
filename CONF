@@ -7,6 +7,8 @@ package HB::;
 ###########################
 # CONF - One Time Only
 
+# conf();
+
 sub conf
 {
   `cp /usb/config/pf.conf /etc/pf.conf`;
@@ -26,3 +28,4 @@ sub conf
 
 #`cp /usb/config/ /etc/`;
 }
+
