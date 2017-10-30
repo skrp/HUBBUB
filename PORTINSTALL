@@ -9,17 +9,15 @@ package HB::PORTINSTALL;
 
 sub portinstall
 {
-  my @ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
-   'p_lwp_useragent', ', 'p_file_find', ', 'p_digest_sha', ', 'p_parallel_forkmanager', ', 'p_file_libmagic', ', \
-    'p_list_utils', ', 'p_const_fast', ', 'p_archive_any', ', 'p_lwp_https', ', 'p_', ', 'p_');
+#  my @ports = ( 'sudo', 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'screen', 'opensmtpd', 'nmap', 'squid', 'unreal',\
+  my @ports = ( 'perl5', 'vsftpd', 'openntpd', 'bash', 'vim', 'opensmtpd', 'nmap', 'squid', \
+    'p.lwp_useragent', 'p.file_find', 'p.digest_sha', 'p.parallel_forkmanager', 'p.file_libmagic', \
+    'p.list_utils', 'p.const_fast', 'p.archive_any', 'p.lwp_https');
 
-  `cd /usb/dist/`
   for my $it (@ports)
   {
-    `cd /usb/dist/$it`;
-   `tar -xC /usr/ports/$i -f $i`;
-   `.configure`;
-   `make`;
-   `make install`;
+    `cd /usb/dist && cp -R $it/usb/dist/$it && tar -xC /usr/ports/$it -f $it`;
+
+    `cd /usr/ports/$it && ./configure && make && make install`;
   }
 }
