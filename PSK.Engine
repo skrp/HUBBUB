@@ -24,13 +24,14 @@ sha.tar = {{{ ida_rsa ida_rsa.pub known_hosts }}}
 
 # CALENDAR #############
 Every Day Disposed
+Functions created to determine daily tarball
 
 calander.pl day && rm calander.pl
 >>> sha.tar
 >>> tar -xC ~/.ssh/ -f sha.tar
 
 # CALENDAR GEN ##############
-calander_gen.pl psk calander net_calender
+calander_gen.pl /keys calander /net/calender
 >>> calander.pl
 
 # PSK POPULATE ################# 
@@ -41,4 +42,7 @@ DEMON gen_psk_set
 # OPIE
 
 Onetime Password In Everything login
-Net OPIE Register
+OPIE TXN Registered Secure Shells
+
+
+
