@@ -5,12 +5,9 @@ net wide established register
 # EXAMPLE ###########################
 ################ high lord valander #
 
-perl/bestow/keymaster xeelopinik remanste 
-
-<<< cp /high/xeelopinik/inactive_keys/c43be9ef_A /usb/inactive_keys/c43be9ef_A
-<<< cp /high/remanste/inactive_keys/c43be9ef_A /usb/inactive_keys/c43be9ef_A
-<<< /high/mordictkon/inactive_keys/
-<<< /high/finkistien/inactive_keys/
+perl/bestow/activate_key/high xeelopinik remanste 
+<<< cp /usb/inactive_keys/c43be9ef_A /high/xeelopinik/inactive_keys/c43be9ef_A
+<<< cp /usb/inactive_keys/c43be9ef_A /high/remanste/inactive_keys/c43be9ef_A 
 >>> cp /usb/inactive_keys/c43be9ef_B /usb/preactive_keys/c43be9ef_B
 
 perl/bestow/inner.pl valander
