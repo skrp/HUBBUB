@@ -35,10 +35,17 @@ COMMON_apellido
 
 pw useradd -n hebinit -g valander -d /usr/home/hebinit -s /usr/local/bin/bash
 pw groupmod lord -m hebinit
-perl /usb/bestow/lord.pl hebinit
 pw groupmod high -m hebinit
-perl /usb/bestow/high.pl hebinit
 
 su hebinit
 opiepasswd -fc
 opiekey -fn 4 498 xx####
+
+perl /usb/bestow/lord.pl hebinit
+>>> cp /usb/preactive_keys/bd3be44fd_B /keys/hebinit/bd3be44fd_B
+>>> cp /usb/preactive_keys/bd3be44fd_B /usb/hb7i3d/hebinit/bd3be44fd_B
+
+perl /usb/bestow/high.pl hebinit
+>>> cp /usb/preactive_keys/c43be9ef_B /keys/hebinit/c43be9ef_B
+>>> cp /usb/preactive_keys/c43be9ef_B /usb/hb7i3d/hebinit/c43be9ef_B_B
+
