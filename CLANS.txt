@@ -1,5 +1,20 @@
 ####################################
 # CLANS - unix group familiarization
+net wide established register
+
+# EXAMPLE ###########################
+################ high lord valander #
+
+perl/bestow/keymaster xeelopinik remanste 
+
+<<< cp /high/xeelopinik/inactive_keys/c43be9ef_A /usb/inactive_keys/c43be9ef_A
+<<< cp /high/remanste/inactive_keys/c43be9ef_A /usb/inactive_keys/c43be9ef_A
+<<< /high/mordictkon/inactive_keys/
+<<< /high/finkistien/inactive_keys/
+>>> cp /usb/inactive_keys/c43be9ef_B /usb/preactive_keys/c43be9ef_B
+
+perl/bestow/inner.pl valander
+>>> cp /usb/preactive_keys/c43be9ef_B /keys/valander/c43be9ef_B
 
 # CLASS ############################
 lord - pskopie
@@ -23,9 +38,9 @@ COMMON_apellido
 
 pw useradd -n hebinit -g valander -d /usr/home/hebinit -s /usr/local/bin/bash
 pw groupmod lord -m hebinit
-perl /usb/lordbestow.pl hebinit
+perl /usb/bestow/lord.pl hebinit
 pw groupmod high -m hebinit
-perl /usb/highbestow.pl hebinit
+perl /usb/bestow/high.pl hebinit
 
 su hebinit
 opiepasswd -fc
