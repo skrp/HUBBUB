@@ -1,0 +1,32 @@
+####################################
+# CLANS - unix group familiarization
+
+# CLASS ############################
+lord - pskopie
+heir - pskopie
+seer - psk
+norm - psk
+jail
+
+# RANK ##############################
+GRAND_apellido
+  net root
+HIGH_apellido
+  inner ring
+MASTER_apellido
+  host ambassador
+COMMON_apellido
+  login
+
+# EXAMPLE ###########################
+################ high lord valander #
+
+pw useradd -n hebinit -g valander -d /usr/home/hebinit -s /usr/local/bin/bash
+pw groupmod lord -m hebinit
+perl /usb/lordbestow.pl hebinit
+pw groupmod high -m hebinit
+perl /usb/highbestow.pl hebinit
+
+su hebinit
+opiepasswd -fc
+opiekey -fn 4 498 xx####
