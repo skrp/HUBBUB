@@ -17,6 +17,8 @@ usr();
 sub usr 
 {
 # norm #######################
+  `pw userdel toor`; # remove uucp in favor of scp
+
   `pw groupadd norm`;
   `pw useradd -n norm -g norm -d /usr/home/norm -s /usr/local/bin/bash`;
 
