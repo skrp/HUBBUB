@@ -16,7 +16,10 @@ usr();
 
 sub usr 
 {
+# seer: ftp mail log_mkrx log_hive 
+
 # norm #######################
+
   `pw userdel toor`; # remove uucp in favor of scp
 
   `pw groupadd norm`;
